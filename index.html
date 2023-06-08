@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="./dist/css/main.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header__container">
+        <h1>
+          <img
+            class="header__logo"
+            src="./dist/images/disneyplus.svg"
+            alt="Disney+"
+          />
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item">
+            <a href="#" class="button button--secondary">Assine agora</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#" class="button button--dark">Entrar</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <section class="hero">
       <div class="hero__content">
         <h1 class="hero__content__branding">
@@ -30,11 +49,11 @@
           </li>
           <li class="hero__content__combos__combo">
             <img
-              src="./dist/images/logos/disney_star_plus.png"
+              src="./dist/images/logos/disney_star_plus_starzplay.png"
               alt="Disney+ - Star+ - Combo+"
             />
             <button class="button">Assine Agora</button>
-            <span class="text">R$ 45,90/mês*</span>
+            <span class="text">R$ 55,90/mês*</span>
           </li>
         </ul>
         <p class="text--small">
@@ -47,7 +66,7 @@
       <nav class="shows__tabs">
         <button
           data-tab-button="em_breve"
-          class="shows__tabs__button shows__tabs__button--is--active"
+          class="shows__tabs__button shows__tabs__button--is-active"
         >
           Em Breve
         </button>
@@ -58,24 +77,27 @@
           Mais no Star+
         </button>
       </nav>
-      <ul data-tab-id="em_breve" class="shows__list shows__list--is--active">
+      <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
         <li class="shows__list__item">
           <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img
+            src="./dist/images/em_breve/desencantada.jpg"
+            alt="desencantada"
+          />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomen" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="Santa" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img src="./dist/images/em_breve/willow.jpg" alt="Willow" />
         </li>
       </ul>
       <ul data-tab-id="populares" class="shows__list">
@@ -83,19 +105,28 @@
           <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img src="./dist/images/mais_populares/bluey.jpg" alt="bluey" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img
+            src="./dist/images/mais_populares/cavaleira_da_lua.jpg"
+            alt="Cavaleiro"
+          />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img
+            src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg"
+            alt="Incrivel"
+          />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img src="./dist/images/mais_populares/red.jpg" alt="Red" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img
+            src="./dist/images/mais_populares/tudo_igual_sqn.jpg"
+            alt="SQN"
+          />
         </li>
       </ul>
       <ul data-tab-id="star_plus" class="shows__list">
@@ -106,19 +137,28 @@
           />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="NBA" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img
+            src="./dist/images/mais_no_star_plus/os_simpson.jpg"
+            alt="Simpson"
+          />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img
+            src="./dist/images/mais_no_star_plus/premier_league.jpg"
+            alt="Premier"
+          />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
+          <img
+            src="./dist/images/mais_no_star_plus/the_kardashians.jpg"
+            alt="Kardashians"
+          />
         </li>
       </ul>
     </section>
@@ -180,7 +220,13 @@
       </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-      <img src="./dist/images/fundo_rei_leao.png" alt="rei leaoS" />
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcset="./dist/images/fundo_rei_leao_celular.png"
+        />
+        <img src="./dist/images/fundo_rei_leao.png" alt="rei leão" />
+      </picture>
       <div
         class="image-text-section image-text-section--image-full-width__text_container"
       >

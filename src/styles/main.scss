@@ -99,29 +99,6 @@ button {
   padding: 8px 14px;
   letter-spacing: 1px;
   border: 1px solid variaveis.$corDeFundoBotaoPrimario;
-
-  &:hover {
-    background-color: lighten(variaveis.$corDeFundoBotaoPrimario, 3%);
-  }
-
-  &--secondary {
-    background-color: variaveis.$corDeFundoBotaoSecundario;
-    border-color: variaveis.$corDeFundoBotaoSecundario;
-
-    &:hover {
-      background-color: lighten(variaveis.$corDeFundoBotaoSecundario, 3%);
-    }
-  }
-
-  &--dark {
-    background-color: rbga(variaveis.$corDeFundoBotaoDark, 0.8);
-    border-color: variaveis.$corDeFundoBotaoSecundario;
-
-    &:hover {
-      background-color: variaveis.$corDeFundoBotaoSecundario;
-      color: variaveis.$corDeFundo;
-    }
-  }
 }
 
 .image-text-section {

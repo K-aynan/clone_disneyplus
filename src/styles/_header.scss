@@ -2,61 +2,83 @@
 
 .header {
   position: sticky;
-  left: 0;
   top: 0;
-  background-color: variaveis.$corDeFundo;
+  left: 0;
+  background-color: #040714;
   transition: background-color .5s ease;
-  z-index: 1;
+  z-index: 1
+}
 
-  &--is-hidden {
-    background-color: transparent;
+.header__links__item a {
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  background-color: transparent;
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 8px 14px;
+  letter-spacing: 1px;
+  border: 1px solid blue;
+}
 
-    .header {
-      &__logo, &__links__item:first-child {
-        opacity: 0;
-        visibility: hidden;
-      }
-    }
+.header--is-hidden {
+  background-color: rgba(0,0,0,0)
+}
+
+.header--is-hidden .header__logo,.header--is-hidden .header__links__item:first-child {
+  opacity: 0;
+  visibility: hidden
+}
+
+.header__container {
+  padding: 8px 36px;
+  display: flex;
+  justify-content: space-between
+}
+
+@media(max-width: 768px) {
+  .header__container {
+      padding:0 12px 0 20px
   }
+}
 
-  &__container {
-    padding: 8px 36px;
-    display: flex;
-    justify-content: space-between;
+.header__logo {
+  max-width: 80px;
+  width: 100%;
+  margin: 5px;
+  transition: opacity .5s ease
+}
 
-    @media (max-width: 768px) {
-      padding: 0 12px 0 20px;
-    }
+@media(max-width: 768px) {
+  .header__logo {
+      max-width:64px
   }
+}
 
-  &__logo {
-    max-width: 80px;
-    width: 100%;
-    margin: 5px;
-    transition: opacity .5s ease;
+.header__links {
+  display: flex
+}
 
-    @media (max-width: 768px) {
-      max-width: 64px;
-    }
-  }
+.header__links__item {
+  margin: 5px;
+  transition: opacity .5s ease
+}
 
-  &__links {
-    display: flex;
+.header .button {
+  height: 50px
+}
 
-    &__item {
-      margin: 5px;
-      transition: opacity .5s ease;
-    }
-  }
-
-  .button {
-    height: 50px;
-
-    @media (max-width: 768px) {
-      font-size: 13px;
+@media(max-width: 768px) {
+  .header .button {
+      font-size:13px;
       padding: 8px 11px;
       height: 40px;
-      letter-spacing: 0;
-    }
+      letter-spacing: 0
   }
 }
